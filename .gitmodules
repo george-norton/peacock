@@ -1,0 +1,6 @@
+[submodule "marbastlib"]
+	path = marbastlib
+	url = https://github.com/ebastler/marbastlib.git
+[submodule "vik"]
+	path = vik
+	url = https://github.com/sadekbaroudi/vik.git

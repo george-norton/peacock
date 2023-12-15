@@ -21,7 +21,7 @@
     (uuid 7214447c-3810-444c-ae01-f30c5c4de30c)
   )
 
-  (text "TODO controller:\nReset button?\nTestpoints?\nZeoZero ohm resistor to disable 5V line on the VIK header.\n\nTODO trackpad:\nZero ohm resistor and jumper to toggle use of 5v/3.3v Power.\nReset circuit to delay output from LDO.\nAdjust reset delay on touch controller to be > 90ns after the LDO starts."
+  (text "TODO controller:\nReset button?\nTestpoints?\n\nTODO trackpad:\nNothing"
     (at 306.07 109.22 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2b6807e9-b94d-4121-8156-458f66cca5fe)
