@@ -1,0 +1,71 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 3796446b-0052-4d89-b512-07a2e9135d0d)
+
+  (paper "A3")
+
+  (title_block
+    (title "Trackpad")
+    (date "2023-12-08")
+    (rev "1")
+    (company "George Norton")
+  )
+
+  (lib_symbols
+  )
+
+
+  (rectangle (start 190.5 149.86) (end 198.12 179.07)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid 7214447c-3810-444c-ae01-f30c5c4de30c)
+  )
+
+  (text "TODO controller:\nReset button?\nTestpoints?\nZeoZero ohm resistor to disable 5V line on the VIK header.\n\nTODO trackpad:\nZero ohm resistor and jumper to toggle use of 5v/3.3v Power.\nReset circuit to delay output from LDO.\nAdjust reset delay on touch controller to be > 90ns after the LDO starts."
+    (at 306.07 109.22 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 2b6807e9-b94d-4121-8156-458f66cca5fe)
+  )
+  (text "FPC cable" (at 199.39 166.37 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 9705f282-5225-402e-8a39-d142f05a20a5)
+  )
+
+  (sheet (at 146.05 77.47) (size 153.67 82.55) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b)
+    (property "Sheetname" "Sensor" (at 146.05 76.7584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "sensor.kicad_sch" (at 146.05 160.6046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "trackpad"
+        (path "/3796446b-0052-4d89-b512-07a2e9135d0d" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 146.05 171.45) (size 154.94 29.21) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid efc97fde-28db-4fd6-89b1-84dafa779b4e)
+    (property "Sheetname" "Macropad" (at 146.05 170.7384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "macropad.kicad_sch" (at 146.05 201.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "trackpad"
+        (path "/3796446b-0052-4d89-b512-07a2e9135d0d" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
