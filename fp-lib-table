@@ -4,4 +4,6 @@
   (lib (name "Vik")(type "KiCad")(uri "${KIPRJMOD}/vik/kicad/vik.pretty")(options "")(descr ""))
   (lib (name "PCM_marbastlib-various")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/footprints/marbastlib-various.pretty")(options "")(descr ""))
   (lib (name "PCM_marbastlib-choc")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/footprints/marbastlib-choc.pretty")(options "")(descr ""))
+  (lib (name "PCM_marbastlib-mx")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/footprints/marbastlib-mx.pretty")(options "")(descr ""))
+  (lib (name "PCM_marbastlib-xp-choc")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/footprints/marbastlib-xp-choc.pretty")(options "")(descr ""))
 )
