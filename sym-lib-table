@@ -2,6 +2,6 @@
   (version 7)
   (lib (name "MaxTouch")(type "KiCad")(uri "${KIPRJMOD}/symbols/MaxTouch.kicad_sym")(options "")(descr ""))
   (lib (name "Vik")(type "KiCad")(uri "${KIPRJMOD}/vik/kicad/vik.kicad_sym")(options "")(descr ""))
-  (lib (name "Mcp5323")(type "KiCad")(uri "${KIPRJMOD}/symbols/MIC5323-3_3YD5-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "Mcp5323")(type "KiCad")(uri "${KIPRJMOD}/symbols/MIC5323-3_3YD5-TR.kicad_sym")(options "")(descr "")(disabled)(hidden))
   (lib (name "Marbastlib")(type "KiCad")(uri "${KIPRJMOD}/marbastlib/symbols/marbastlib-various.kicad_sym")(options "")(descr ""))
 )
