@@ -3974,9 +3974,6 @@
     (property "Datasheet" "~" (at 165.1 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C25104" (at 165.1 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
     (pin "1" (uuid 2570b2a8-c860-4991-96bf-286f6cfcd07b))
     (pin "2" (uuid cfd55853-02f3-48b9-a269-5df37056a150))
     (instances
