@@ -2,6 +2,7 @@
 
 ![Peacock low case](https://imgur.com/0mE4lLrh.jpg)
 Included are STL and STEP files, intended for FDM 3D printing.
+Also included are DXF and SVG files intended as a template for making a trackpad overlay (e.g. from Self adhesive vinyl).
 The case is designed for m3 hardware- I used m3x6mm all round.
 Optionally, you can use longer m3 bolts to tilt the back of the case up for comfort.
 
