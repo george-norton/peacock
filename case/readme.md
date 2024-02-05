@@ -1,0 +1,8 @@
+## Peacock Trackpad Case by bomtarnes ([keyboard-magpie](https://github.com/keyboard-magpie/))
+
+![Peacock low case](https://imgur.com/0mE4lLrh.jpg)
+Included are STL and STEP files, intended for FDM 3D printing.
+The case is designed for m3 hardware- I used m3x6mm all round.
+Optionally, you can use longer m3 bolts to tilt the back of the case up for comfort.
+
+![Peacock low case fusion 360 view](https://imgur.com/ODhpnVRh.jpg)
