@@ -3291,7 +3291,7 @@
     (uuid fb1d8beb-14f9-41c1-96d5-60db51b1efce)
   )
 
-  (rectangle (start 124.46 165.1) (end 172.72 186.69)
+  (rectangle (start 124.46 165.1) (end 172.72 195.58)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 1518bd34-06d4-42f3-aabb-e7ca4e6ca8c0)
@@ -3394,6 +3394,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0c2d69b7-1897-4e85-af56-1a233c84fe2d)
   )
+  (label "MOSI" (at 161.29 184.15 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 0c89438c-0031-48ee-85c1-03c7c4ff65ef)
+  )
   (label "D-" (at 270.51 58.42 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1e0e4a9b-58c8-4773-b646-94a37fd2e45d)
@@ -3434,6 +3438,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 39bcec37-fc65-4493-9483-ddf749616585)
   )
+  (label "SCLK" (at 161.29 191.77 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 3a1b2d22-5376-4808-abed-f50bf99cb6b1)
+  )
   (label "ENC1_A" (at 135.89 147.32 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 3b6acb6e-f6fd-48a9-9ee0-85326297ebc2)
@@ -3446,7 +3454,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 44a7df04-0179-4762-a93e-635edb495d0b)
   )
-  (label "VIK_RGB" (at 161.29 171.45 0) (fields_autoplaced)
+  (label "VIK_RGB" (at 161.29 168.91 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 46955c9a-91a0-4a0a-8aca-975d5c0f5d26)
   )
@@ -3458,7 +3466,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4a752bc3-be47-44f1-96ff-05eb5b360602)
   )
-  (label "GPIO_AD2" (at 161.29 179.07 0) (fields_autoplaced)
+  (label "GPIO_AD2" (at 161.29 176.53 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4b18947b-385d-40c4-918b-c8fdc3db6663)
   )
@@ -3502,7 +3510,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 75a7613b-98a4-4649-b068-741429f2dc4f)
   )
-  (label "GPIO_AD1" (at 161.29 176.53 0) (fields_autoplaced)
+  (label "GPIO_AD1" (at 161.29 173.99 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 80053dbc-6719-464a-ab8b-313bef1dd858)
   )
@@ -3545,6 +3553,10 @@
   (label "D+" (at 245.11 63.5 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 9da80fa1-6dd3-4e02-bdae-aee979ef3a20)
+  )
+  (label "MISO" (at 161.29 189.23 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b73e76cf-3fb9-4a00-b8f4-c8d164deda44)
   )
   (label "D-" (at 222.25 58.42 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -3606,6 +3618,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f63a667b-6aaf-4204-97da-616dd26519d7)
   )
+  (label "SPI_CS" (at 161.29 186.69 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f9d467aa-08b8-4d0e-9335-8b23b5103117)
+  )
   (label "SW7" (at 107.95 92.71 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fd3d48e6-addd-466d-8fab-2ae2dfe13651)
@@ -3618,7 +3634,7 @@
   (symbol (lib_id "power:+5V") (at 36.83 180.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 003515a9-a99c-4b7f-9674-855bbe09f5d7)
-    (property "Reference" "#PWR015" (at 36.83 184.15 0)
+    (property "Reference" "#PWR047" (at 36.83 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 38.1 176.53 0)
@@ -3633,9 +3649,6 @@
     (pin "1" (uuid df99bd57-bf68-44e5-b6ec-eed1fe18fbd4))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR015") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR047") (unit 1)
         )
@@ -3671,7 +3684,7 @@
   (symbol (lib_id "power:GND") (at 251.46 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 048978ab-48d1-42a7-90cc-41c857609163)
-    (property "Reference" "#PWR041" (at 251.46 157.48 0)
+    (property "Reference" "#PWR039" (at 251.46 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 251.46 156.21 0)
@@ -3686,9 +3699,6 @@
     (pin "1" (uuid 0ebccef8-dd55-4c45-982e-4903670f19f0))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR041") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR039") (unit 1)
         )
@@ -3699,7 +3709,7 @@
   (symbol (lib_id "power:GND") (at 157.48 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 067fadbe-be00-4352-9d5a-17c088302dd8)
-    (property "Reference" "#PWR038" (at 157.48 113.03 0)
+    (property "Reference" "#PWR056" (at 157.48 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 161.29 109.22 0)
@@ -3714,9 +3724,6 @@
     (pin "1" (uuid d6dae082-fbbc-41a2-ba38-2676db829cff))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR038") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR056") (unit 1)
         )
@@ -3744,9 +3751,6 @@
     (pin "3" (uuid 125aa03b-0745-4fc7-a081-863f24c51daf))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "J3") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "J3") (unit 1)
         )
@@ -3856,9 +3860,6 @@
     (pin "9" (uuid ef20b145-8776-41a7-8962-c60e180ae31d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "U1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "U1") (unit 1)
         )
@@ -3962,7 +3963,7 @@
   (symbol (lib_id "Device:R_Small") (at 165.1 118.11 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 12b0c0e4-c73d-4cd4-8eb5-ba8736865805)
-    (property "Reference" "R15" (at 165.1 113.03 90)
+    (property "Reference" "R18" (at 165.1 113.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "330" (at 165.1 115.57 90)
@@ -3981,9 +3982,6 @@
     (pin "2" (uuid cfd55853-02f3-48b9-a269-5df37056a150))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b"
-          (reference "R15") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R18") (unit 1)
         )
@@ -4013,9 +4011,6 @@
     (pin "2" (uuid b6176f7d-a265-402b-b435-212e81da7a8b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C8") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C8") (unit 1)
         )
@@ -4055,7 +4050,7 @@
   (symbol (lib_id "Device:C_Small") (at 77.47 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21506f8b-a7b3-4b81-b06d-a6422d2e6347)
-    (property "Reference" "C29" (at 80.01 181.6163 0)
+    (property "Reference" "C30" (at 80.01 181.6163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1µ" (at 80.01 184.15 0)
@@ -4074,9 +4069,6 @@
     (pin "2" (uuid 98647951-631a-4074-982b-a450116f69a0))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C29") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C30") (unit 1)
         )
@@ -4102,9 +4094,6 @@
     (pin "1" (uuid b7b42906-fe2c-4cdc-9afd-8fb44405d117))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR03") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR03") (unit 1)
         )
@@ -4115,7 +4104,7 @@
   (symbol (lib_id "power:+3.3V") (at 135.89 119.38 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 232ef54f-b206-4b9d-9939-287ac88cf061)
-    (property "Reference" "#PWR013" (at 135.89 123.19 0)
+    (property "Reference" "#PWR069" (at 135.89 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 132.08 116.84 0)
@@ -4130,9 +4119,6 @@
     (pin "1" (uuid a67f51c7-93a0-4f41-af54-c842f01ff9f4))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR013") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR069") (unit 1)
         )
@@ -4193,9 +4179,6 @@
     (pin "2" (uuid 278bbfa9-9d60-4c3a-937d-6d7d0d50fdb6))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C9") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C9") (unit 1)
         )
@@ -4225,9 +4208,6 @@
     (pin "2" (uuid e8b31cd4-f2d7-4a6b-93ab-357504b8b49f))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C10") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C10") (unit 1)
         )
@@ -4238,7 +4218,7 @@
   (symbol (lib_id "power:GND") (at 139.7 171.45 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d808a85-02ea-443a-8416-d16e21450d2f)
-    (property "Reference" "#PWR042" (at 146.05 171.45 0)
+    (property "Reference" "#PWR077" (at 146.05 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 171.45 90)
@@ -4253,9 +4233,6 @@
     (pin "1" (uuid f606da16-f54e-4e6f-9e10-d9f5baf59eba))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR042") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR077") (unit 1)
         )
@@ -4316,9 +4293,6 @@
     (pin "2" (uuid bd9320a4-a69e-41f8-abc1-9f1905b1900c))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R6") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R6") (unit 1)
         )
@@ -4329,7 +4303,7 @@
   (symbol (lib_id "power:+3.3V") (at 77.47 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 34e07f11-76a4-4a98-adf2-e1051d9e8018)
-    (property "Reference" "#PWR016" (at 77.47 182.88 0)
+    (property "Reference" "#PWR048" (at 77.47 182.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 80.01 175.26 0)
@@ -4344,9 +4318,6 @@
     (pin "1" (uuid d53a5a50-259f-47b1-9141-1c45b114f4ae))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR016") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR048") (unit 1)
         )
@@ -4430,9 +4401,6 @@
     (pin "2" (uuid a50aa119-7e3a-476a-b904-581ef1b12eb9))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "F1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "F1") (unit 1)
         )
@@ -4443,7 +4411,7 @@
   (symbol (lib_id "power:+5V") (at 149.86 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3e2238ba-a253-431a-a8ce-4197e132d48e)
-    (property "Reference" "#PWR015" (at 149.86 104.14 0)
+    (property "Reference" "#PWR070" (at 149.86 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 151.13 96.52 0)
@@ -4458,9 +4426,6 @@
     (pin "1" (uuid 5f689f4b-5d3a-478f-a13f-2e3810956db4))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR015") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR070") (unit 1)
         )
@@ -4471,7 +4436,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 163.83 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ebca85d-1d83-4e07-90d1-44970c3d4f79)
-    (property "Reference" "H1" (at 107.95 165.1 90)
+    (property "Reference" "H5" (at 107.95 165.1 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole" (at 102.87 162.56 90)
@@ -4486,9 +4451,6 @@
     (pin "1" (uuid bc79e2e3-f5fe-40a4-9754-5ca813a8036a))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b"
-          (reference "H1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "H5") (unit 1)
         )
@@ -4524,7 +4486,7 @@
   (symbol (lib_id "power:+3.3V") (at 139.7 173.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 409c69b3-9806-4484-a2e3-7c03dc8a05ad)
-    (property "Reference" "#PWR09" (at 135.89 173.99 0)
+    (property "Reference" "#PWR078" (at 135.89 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 142.24 173.99 90)
@@ -4539,9 +4501,6 @@
     (pin "1" (uuid 5b50e97b-4259-49dd-b8ca-2f64520bf7ff))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR09") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR078") (unit 1)
         )
@@ -4571,9 +4530,6 @@
     (pin "2" (uuid d7a3a3f9-0345-48c1-8c20-da4ca049d608))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C12") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C12") (unit 1)
         )
@@ -4584,7 +4540,7 @@
   (symbol (lib_id "power:GND") (at 82.55 140.97 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 47ae65be-f140-4567-9a10-993caf9246fb)
-    (property "Reference" "#PWR01" (at 82.55 147.32 0)
+    (property "Reference" "#PWR014" (at 82.55 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 82.55 146.05 0)
@@ -4599,9 +4555,6 @@
     (pin "1" (uuid dcef5601-ed2e-4051-958e-d00603c03881))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR01") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR014") (unit 1)
         )
@@ -4609,19 +4562,19 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x04_Pin") (at 156.21 173.99 0) (unit 1)
+  (symbol (lib_id "Connector:Conn_01x04_Pin") (at 156.21 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 47da6c89-46fb-4f0e-8db5-665bf09528a9)
-    (property "Reference" "J7" (at 154.94 171.45 0)
+    (property "Reference" "J7" (at 154.94 168.91 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x04_Pin" (at 156.21 181.61 0)
+    (property "Value" "Conn_01x04_Pin" (at 156.21 179.07 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 156.21 173.99 0)
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 156.21 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 156.21 173.99 0)
+    (property "Datasheet" "~" (at 156.21 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "2" (uuid 2648538b-fdd5-4546-b937-def2719c44dd))
@@ -4640,7 +4593,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 176.53 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 48d951d7-15db-4799-935a-7f1dc2f49c1a)
-    (property "Reference" "H3" (at 107.95 177.8 90)
+    (property "Reference" "H7" (at 107.95 177.8 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole" (at 102.87 175.26 90)
@@ -4655,9 +4608,6 @@
     (pin "1" (uuid e46f4e9c-fa07-4b70-b231-670e5f940d2d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b"
-          (reference "H3") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "H7") (unit 1)
         )
@@ -4687,9 +4637,6 @@
     (pin "2" (uuid bd9f06fa-8e05-4beb-b303-9e70e94374a3))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C11") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C11") (unit 1)
         )
@@ -4729,7 +4676,7 @@
   (symbol (lib_id "power:GND") (at 257.81 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d17ccc1-6cb1-4e23-8461-8f478fd5b252)
-    (property "Reference" "#PWR017" (at 257.81 77.47 0)
+    (property "Reference" "#PWR071" (at 257.81 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 260.35 71.12 0)
@@ -4744,9 +4691,6 @@
     (pin "1" (uuid 7e4050e0-2d4a-4dca-9c70-e4fffac18315))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR017") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR071") (unit 1)
         )
@@ -4757,7 +4701,7 @@
   (symbol (lib_id "power:GND") (at 76.2 158.75 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4e994b33-ab10-4547-9310-93e79f4a175c)
-    (property "Reference" "#PWR01" (at 82.55 158.75 0)
+    (property "Reference" "#PWR051" (at 82.55 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 158.75 90)
@@ -4772,9 +4716,6 @@
     (pin "1" (uuid ded668f3-4bee-4d6e-a2bb-21f916f9012d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR01") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR051") (unit 1)
         )
@@ -4785,7 +4726,7 @@
   (symbol (lib_id "power:GND") (at 199.39 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4ee0a70a-3077-4776-a7b9-9ae983af01fb)
-    (property "Reference" "#PWR038" (at 199.39 90.17 0)
+    (property "Reference" "#PWR031" (at 199.39 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 203.2 86.36 0)
@@ -4800,9 +4741,6 @@
     (pin "1" (uuid fbcc4c5f-30f9-4472-8208-8f58167dda75))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR038") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR031") (unit 1)
         )
@@ -4868,9 +4806,6 @@
     (pin "9" (uuid d7048931-ea32-494a-9eb4-a8ba74cdc82b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "U2") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "U2") (unit 1)
         )
@@ -4881,7 +4816,7 @@
   (symbol (lib_id "Device:C_Small") (at 36.83 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 531de30c-83d5-4b0a-af5d-940c9b027d13)
-    (property "Reference" "C29" (at 39.37 181.6163 0)
+    (property "Reference" "C15" (at 39.37 181.6163 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1µ" (at 39.37 184.15 0)
@@ -4900,9 +4835,6 @@
     (pin "2" (uuid 5e44c597-615b-402d-9e52-6f631cd80a4c))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C29") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C15") (unit 1)
         )
@@ -4913,7 +4845,7 @@
   (symbol (lib_id "power:GND") (at 99.06 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 53f1087b-1feb-4c20-879f-a71d826a1c37)
-    (property "Reference" "#PWR08" (at 99.06 46.99 0)
+    (property "Reference" "#PWR016" (at 99.06 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 99.06 45.72 0)
@@ -4928,9 +4860,6 @@
     (pin "1" (uuid 23e4fe49-a690-4aac-9510-767a2eb3a03b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR08") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR016") (unit 1)
         )
@@ -4941,7 +4870,7 @@
   (symbol (lib_id "power:GND") (at 36.83 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55c8cb1e-1fb4-41b9-8054-6eb23af17936)
-    (property "Reference" "#PWR032" (at 36.83 190.5 0)
+    (property "Reference" "#PWR049" (at 36.83 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 38.1 187.96 0)
@@ -4956,9 +4885,6 @@
     (pin "1" (uuid 40f7b7cd-a410-491f-abcb-f223c130040a))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR032") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR049") (unit 1)
         )
@@ -4988,9 +4914,6 @@
     (pin "2" (uuid a6b4b8d1-574f-4614-8acb-874b74c5ba6f))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C2") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C2") (unit 1)
         )
@@ -5026,7 +4949,7 @@
   (symbol (lib_id "power:GND") (at 60.96 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d4937d6-05da-4f56-a8fc-aba83b412d43)
-    (property "Reference" "#PWR032" (at 60.96 196.85 0)
+    (property "Reference" "#PWR052" (at 60.96 196.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 62.23 189.23 90)
@@ -5041,9 +4964,6 @@
     (pin "1" (uuid 24b161a6-6a84-4c47-8643-45643a0b09b0))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR032") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR052") (unit 1)
         )
@@ -5104,9 +5024,6 @@
     (pin "2" (uuid 5e70ed8b-780d-454f-bbbc-ed71d56a5e0b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R3") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R3") (unit 1)
         )
@@ -5162,9 +5079,6 @@
     (pin "2" (uuid 19e24f15-8900-4718-ab53-a48b71d601ea))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "D1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "D1") (unit 1)
         )
@@ -5194,9 +5108,6 @@
     (pin "2" (uuid 86a27ad8-bcfc-4580-932c-f50527612b0f))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C4") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C4") (unit 1)
         )
@@ -5236,9 +5147,6 @@
     (pin "9" (uuid 7901db6d-defa-4b18-b44b-c042bfa8c53e))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "J2") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "J2") (unit 1)
         )
@@ -5282,7 +5190,7 @@
   (symbol (lib_id "power:VBUS") (at 220.98 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 70abc6c5-af81-4c68-91ed-7ad4fc0e8331)
-    (property "Reference" "#PWR018" (at 220.98 46.99 0)
+    (property "Reference" "#PWR036" (at 220.98 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 220.98 38.1 0)
@@ -5297,9 +5205,6 @@
     (pin "1" (uuid 8507e720-29a5-498e-ba08-3e3fc19b5e1d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR018") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR036") (unit 1)
         )
@@ -5310,7 +5215,7 @@
   (symbol (lib_id "power:GND") (at 238.76 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74321242-4df9-408c-8da0-8145e5e62d91)
-    (property "Reference" "#PWR033" (at 238.76 158.75 0)
+    (property "Reference" "#PWR019" (at 238.76 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 238.76 157.48 0)
@@ -5325,9 +5230,6 @@
     (pin "1" (uuid 38582791-8f6d-41ce-9e49-f0282a0e256b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR033") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR019") (unit 1)
         )
@@ -5338,13 +5240,13 @@
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 143.51 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74b9aa07-0f53-466f-85cb-40b581123b22)
-    (property "Reference" "SW6" (at 143.51 139.7 0)
+    (property "Reference" "SW1" (at 143.51 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RotaryEncoder_Switch" (at 143.51 142.24 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "PCM_marbastlib-various:ROT_Alps_EC11E-Switch" (at 139.7 145.796 0)
+    (property "Footprint" "Trackpad:ROT_Alps_EC11E-Switch" (at 139.7 145.796 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 143.51 143.256 0)
@@ -5357,9 +5259,6 @@
     (pin "S2" (uuid 9d66b18f-77ea-4d9c-9c35-8dc8c93c9900))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW6") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW1") (unit 1)
         )
@@ -5449,7 +5348,7 @@
   (symbol (lib_id "power:GND") (at 162.56 59.69 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 809af591-130b-4058-af70-3e998c591d22)
-    (property "Reference" "#PWR044" (at 156.21 59.69 0)
+    (property "Reference" "#PWR030" (at 156.21 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 157.48 58.42 90)
@@ -5464,9 +5363,6 @@
     (pin "1" (uuid 2eac37b7-8e6a-472e-a470-d85496654ed4))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR044") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR030") (unit 1)
         )
@@ -5477,7 +5373,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 182.88 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83b02ade-7043-43ce-91d1-78b2a44d28ec)
-    (property "Reference" "H4" (at 107.95 184.15 90)
+    (property "Reference" "H8" (at 107.95 184.15 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole" (at 102.87 181.61 90)
@@ -5492,9 +5388,6 @@
     (pin "1" (uuid 0639d3c4-dd9c-40c3-b200-a2e78ca6b4bd))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b"
-          (reference "H4") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "H8") (unit 1)
         )
@@ -5505,7 +5398,7 @@
   (symbol (lib_id "power:GND") (at 191.77 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8db46de1-d624-4442-b895-2076aebe4cfb)
-    (property "Reference" "#PWR039" (at 191.77 158.75 0)
+    (property "Reference" "#PWR034" (at 191.77 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 191.77 157.48 0)
@@ -5520,9 +5413,6 @@
     (pin "1" (uuid 1d50ec9c-8067-41dd-833d-41770c2e946b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR039") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR034") (unit 1)
         )
@@ -5533,10 +5423,10 @@
   (symbol (lib_id "power:GND") (at 118.11 191.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8eeead1d-595b-463e-b837-0e9e192ea138)
-    (property "Reference" "#PWR032" (at 118.11 198.12 0)
+    (property "Reference" "#PWR083" (at 118.11 198.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 120.65 195.58 0)
+    (property "Value" "GND" (at 114.3 194.31 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 118.11 191.77 0)
@@ -5548,9 +5438,6 @@
     (pin "1" (uuid 81563f30-2715-4e43-afe3-bbfab530f7bc))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR032") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR083") (unit 1)
         )
@@ -5561,7 +5448,7 @@
   (symbol (lib_id "power:GND") (at 127 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8ef3be6d-4ba8-4d3d-a150-7d28d8f02554)
-    (property "Reference" "#PWR037" (at 127 156.21 0)
+    (property "Reference" "#PWR038" (at 127 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 154.94 0)
@@ -5576,9 +5463,6 @@
     (pin "1" (uuid 83d9be68-2196-459e-b988-cf238c8a8468))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR037") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR038") (unit 1)
         )
@@ -5589,7 +5473,7 @@
   (symbol (lib_id "power:GND") (at 69.85 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9046f5d0-075c-4daf-ac44-1638c6f23cd7)
-    (property "Reference" "#PWR05" (at 69.85 46.99 0)
+    (property "Reference" "#PWR09" (at 69.85 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 45.72 0)
@@ -5604,9 +5488,6 @@
     (pin "1" (uuid 7b87cffd-faac-4d5a-aa50-23702ff4fb17))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR05") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR09") (unit 1)
         )
@@ -5617,7 +5498,7 @@
   (symbol (lib_id "power:GND") (at 33.02 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 928314ef-36f6-4111-a39a-421e2ed67b07)
-    (property "Reference" "#PWR04" (at 33.02 59.69 0)
+    (property "Reference" "#PWR05" (at 33.02 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 36.83 55.88 0)
@@ -5632,9 +5513,6 @@
     (pin "1" (uuid 5432f62c-5188-4582-b1e1-f1312dab6f96))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR04") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR05") (unit 1)
         )
@@ -5664,9 +5542,6 @@
     (pin "2" (uuid ccf232b1-70b9-4801-a2f8-db00a9e8547f))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C13") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C13") (unit 1)
         )
@@ -5706,7 +5581,7 @@
   (symbol (lib_id "power:GND") (at 176.53 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 98265fc2-de9c-42b2-a31f-093cf0028342)
-    (property "Reference" "#PWR040" (at 176.53 158.75 0)
+    (property "Reference" "#PWR035" (at 176.53 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 157.48 0)
@@ -5721,9 +5596,6 @@
     (pin "1" (uuid 25c4a421-ed34-4ee1-9de8-9b9f940233ef))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR040") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR035") (unit 1)
         )
@@ -5734,7 +5606,7 @@
   (symbol (lib_id "power:+3.3V") (at 144.78 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 988a787d-fa1f-48b3-986f-e89e6b83fc74)
-    (property "Reference" "#PWR013" (at 144.78 104.14 0)
+    (property "Reference" "#PWR068" (at 144.78 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 142.24 96.52 0)
@@ -5749,9 +5621,6 @@
     (pin "1" (uuid e5bb7823-612a-4ef1-a7ad-7b0afcfdb078))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR013") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR068") (unit 1)
         )
@@ -5762,7 +5631,7 @@
   (symbol (lib_id "power:GND") (at 208.28 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c237468-402d-4047-8261-0540d256f70a)
-    (property "Reference" "#PWR035" (at 208.28 158.75 0)
+    (property "Reference" "#PWR033" (at 208.28 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 208.28 157.48 0)
@@ -5777,9 +5646,6 @@
     (pin "1" (uuid 0cb5c3e3-442d-4d6d-9018-25c913c3e8ff))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR035") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR033") (unit 1)
         )
@@ -5849,9 +5715,6 @@
     (pin "S1" (uuid c8827763-b9b0-401c-a49a-80acf4caaf34))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "J1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "J1") (unit 1)
         )
@@ -6003,9 +5866,6 @@
     (pin "2" (uuid a863e15c-8f37-4694-9b1d-50ca9c85bcd4))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R8") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R8") (unit 1)
         )
@@ -6016,7 +5876,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 189.23 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid abe96e0e-58fe-4895-8830-aeb4d6097fbc)
-    (property "Reference" "H4" (at 107.95 191.77 90)
+    (property "Reference" "H9" (at 107.95 191.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole" (at 102.87 189.23 90)
@@ -6031,9 +5891,6 @@
     (pin "1" (uuid 5154bb92-9831-4a53-aabb-46736fbb769a))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b"
-          (reference "H4") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "H9") (unit 1)
         )
@@ -6044,7 +5901,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 170.18 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ace579cf-8fa5-4478-be81-2d73449aa332)
-    (property "Reference" "H2" (at 107.95 171.45 90)
+    (property "Reference" "H6" (at 107.95 171.45 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MountingHole" (at 102.87 168.91 90)
@@ -6059,9 +5916,6 @@
     (pin "1" (uuid 5c0368a5-6abd-4ca2-80e7-bca33c490e90))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/2780c9a8-e5e0-42e8-93d7-9eb6f8aa439b"
-          (reference "H2") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "H6") (unit 1)
         )
@@ -6072,7 +5926,7 @@
   (symbol (lib_id "power:GND") (at 147.32 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b09dfa7a-811e-4222-9a22-c3c2aac63e39)
-    (property "Reference" "#PWR038" (at 147.32 132.08 0)
+    (property "Reference" "#PWR067" (at 147.32 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.13 128.27 0)
@@ -6087,9 +5941,6 @@
     (pin "1" (uuid 5189eb75-8fc5-478a-958f-608f27c86880))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR038") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR067") (unit 1)
         )
@@ -6119,9 +5970,6 @@
     (pin "2" (uuid 94854dc5-4e47-475b-a802-1c4655b164a7))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C3") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C3") (unit 1)
         )
@@ -6132,7 +5980,7 @@
   (symbol (lib_id "power:+3.3V") (at 99.06 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6b3762e-9acb-4ca0-a70c-8fd8ecdb3a0f)
-    (property "Reference" "#PWR09" (at 99.06 24.13 0)
+    (property "Reference" "#PWR015" (at 99.06 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 99.06 15.24 0)
@@ -6147,9 +5995,6 @@
     (pin "1" (uuid 4abe92e9-ccf3-4a37-9bf0-ef0616444a2e))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR09") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR015") (unit 1)
         )
@@ -6182,27 +6027,24 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 161.29 173.99 270) (mirror x) (unit 1)
+  (symbol (lib_id "power:+5V") (at 161.29 171.45 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b97395e6-3110-49ab-a52d-130232a98db3)
-    (property "Reference" "#PWR015" (at 157.48 173.99 0)
+    (property "Reference" "#PWR018" (at 157.48 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 165.1 172.72 90)
+    (property "Value" "+5V" (at 165.1 170.18 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 161.29 173.99 0)
+    (property "Footprint" "" (at 161.29 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 161.29 173.99 0)
+    (property "Datasheet" "" (at 161.29 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0fae1e85-0b81-46a2-a90f-0e039775999f))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR015") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR018") (unit 1)
         )
@@ -6213,7 +6055,7 @@
   (symbol (lib_id "power:GND") (at 25.4 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid baebfca1-216d-4834-924f-0c6b36d85ac2)
-    (property "Reference" "#PWR02" (at 25.4 96.52 0)
+    (property "Reference" "#PWR04" (at 25.4 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 25.4 95.25 0)
@@ -6228,9 +6070,6 @@
     (pin "1" (uuid d30e4c5d-c15d-44cc-b1d4-c01b095080dd))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR02") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR04") (unit 1)
         )
@@ -6241,7 +6080,7 @@
   (symbol (lib_id "power:GND") (at 223.52 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb16f0b7-7e70-4ae4-8ebe-0493e4fc1598)
-    (property "Reference" "#PWR034" (at 223.52 158.75 0)
+    (property "Reference" "#PWR032" (at 223.52 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 157.48 0)
@@ -6256,9 +6095,6 @@
     (pin "1" (uuid 73232858-f4e9-4231-8dc5-51aed7145723))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR034") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR032") (unit 1)
         )
@@ -6269,7 +6105,7 @@
   (symbol (lib_id "power:GND") (at 33.02 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb1a25a4-44d7-4edb-b954-44b9d81c10be)
-    (property "Reference" "#PWR014" (at 33.02 127 0)
+    (property "Reference" "#PWR06" (at 33.02 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 33.02 125.73 0)
@@ -6284,9 +6120,6 @@
     (pin "1" (uuid 7b56ebf5-50a1-45c4-9c21-7d242fab9787))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR014") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR06") (unit 1)
         )
@@ -6297,7 +6130,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 218.44 152.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bb25853e-429e-4d8c-b8c0-3674f3bb0d26)
-    (property "Reference" "SW4" (at 218.44 144.78 0)
+    (property "Reference" "SW5" (at 218.44 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 218.44 147.32 0)
@@ -6313,9 +6146,6 @@
     (pin "2" (uuid 2d3cce81-d790-41c7-9943-6dd3b606060e))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW4") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW5") (unit 1)
         )
@@ -6326,7 +6156,7 @@
   (symbol (lib_id "power:GND") (at 137.16 106.68 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc032069-4b2e-457e-9ecc-2d9fecf4ea30)
-    (property "Reference" "#PWR038" (at 137.16 113.03 0)
+    (property "Reference" "#PWR065" (at 137.16 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.35 109.22 0)
@@ -6341,9 +6171,6 @@
     (pin "1" (uuid d1ed7926-8e37-45fd-a5d9-eb7795e33f29))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR038") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR065") (unit 1)
         )
@@ -6354,7 +6181,7 @@
   (symbol (lib_id "power:GND") (at 166.37 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c0e7c099-f8fb-4b7f-81d3-4ab7282fa0e0)
-    (property "Reference" "#PWR010" (at 166.37 43.18 0)
+    (property "Reference" "#PWR037" (at 166.37 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 166.37 41.91 0)
@@ -6369,9 +6196,6 @@
     (pin "1" (uuid e5d2ff8b-393c-45b6-8fca-844bf6c9ff9d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR010") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR037") (unit 1)
         )
@@ -6407,7 +6231,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 186.69 152.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c53613f3-d585-4efa-b382-135059610807)
-    (property "Reference" "SW7" (at 186.69 144.78 0)
+    (property "Reference" "SW3" (at 186.69 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 186.69 147.32 0)
@@ -6423,9 +6247,6 @@
     (pin "2" (uuid 5048ee7f-781c-4d78-b6a2-a95381048435))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW7") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW3") (unit 1)
         )
@@ -6436,7 +6257,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 38.1 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6e6f84f-faa8-4b81-9d65-1104c25be03e)
-    (property "Reference" "SW1" (at 38.1 44.45 0)
+    (property "Reference" "SW_BOOT1" (at 38.1 44.45 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 38.1 46.99 0)
@@ -6455,9 +6276,6 @@
     (pin "2" (uuid aa50443e-a623-4e47-bb9f-671e1a19391d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW_BOOT1") (unit 1)
         )
@@ -6499,7 +6317,7 @@
   (symbol (lib_id "power:GND") (at 275.59 153.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ccd9cd88-77d6-4cde-8208-66f59425e7cb)
-    (property "Reference" "#PWR042" (at 275.59 160.02 0)
+    (property "Reference" "#PWR043" (at 275.59 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 278.13 157.48 0)
@@ -6514,9 +6332,6 @@
     (pin "1" (uuid bfb4125f-e4c8-41f6-a74f-6d7e4fad5145))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR042") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR043") (unit 1)
         )
@@ -6546,9 +6361,6 @@
     (pin "2" (uuid 2f10f95c-f8d8-487e-a540-200804766c68))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C5") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C5") (unit 1)
         )
@@ -6574,9 +6386,6 @@
     (pin "1" (uuid affb6a19-adeb-44bf-a2d1-3f66a0bae89e))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR07") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR07") (unit 1)
         )
@@ -6606,9 +6415,6 @@
     (pin "2" (uuid 43c5c7d1-a8b3-4033-bc9f-68866930a805))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C1") (unit 1)
         )
@@ -6619,7 +6425,7 @@
   (symbol (lib_id "power:GND") (at 77.47 185.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d144299f-660d-4d1b-b4dd-a085e7a10f11)
-    (property "Reference" "#PWR032" (at 77.47 191.77 0)
+    (property "Reference" "#PWR050" (at 77.47 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 189.23 0)
@@ -6634,9 +6440,6 @@
     (pin "1" (uuid 457900e6-dd87-4510-bc0e-c6562a7915cd))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR032") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR050") (unit 1)
         )
@@ -6647,7 +6450,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 203.2 152.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d26a3754-131f-44f2-9475-2ddb6d424147)
-    (property "Reference" "SW5" (at 203.2 144.78 0)
+    (property "Reference" "SW4" (at 203.2 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 203.2 147.32 0)
@@ -6663,9 +6466,6 @@
     (pin "2" (uuid ec521171-362f-41bd-b28e-c2f95d03a499))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW5") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW4") (unit 1)
         )
@@ -6695,11 +6495,36 @@
     (pin "2" (uuid dd78b519-a3f5-4aeb-895e-b475744d096e))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R9") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x04_Pin") (at 156.21 186.69 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d574f79d-c1d8-46c1-86e3-8d3632af4ab8)
+    (property "Reference" "J11" (at 153.67 184.15 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Conn_01x04_Pin" (at 156.21 194.31 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x04_P1.00mm_Vertical" (at 156.21 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 156.21 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 68b42855-c60c-45f2-b728-b3d0dc47aa50))
+    (pin "1" (uuid f08ba41d-d0be-4cca-8abe-92b5e61364be))
+    (pin "3" (uuid 2f9cfe2d-6c39-4cd5-a376-d4494235538c))
+    (pin "4" (uuid 7ff95848-2877-4fdd-9924-d258026875ef))
+    (instances
+      (project "trackpad"
+        (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
+          (reference "J11") (unit 1)
         )
       )
     )
@@ -6727,9 +6552,6 @@
     (pin "2" (uuid ea66cfbb-5242-43db-b047-66cfbfc2c55c))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C7") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C7") (unit 1)
         )
@@ -6740,7 +6562,7 @@
   (symbol (lib_id "power:VBUS") (at 257.81 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d971b5de-1dbc-403d-9513-2dc13a3e3186)
-    (property "Reference" "#PWR018" (at 257.81 54.61 0)
+    (property "Reference" "#PWR072" (at 257.81 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 257.81 45.72 0)
@@ -6755,9 +6577,6 @@
     (pin "1" (uuid 47ac45d7-217e-4235-8dfa-6820ea7a6c9d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR018") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR072") (unit 1)
         )
@@ -6768,7 +6587,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 234.95 152.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d994acaf-b355-48e0-82e2-b2de710b896d)
-    (property "Reference" "SW3" (at 234.95 144.78 0)
+    (property "Reference" "SW6" (at 234.95 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 234.95 147.32 0)
@@ -6784,9 +6603,6 @@
     (pin "2" (uuid 4a1ad631-e3ca-4cd6-b371-ad65424f1f8b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW3") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW6") (unit 1)
         )
@@ -6847,9 +6663,6 @@
     (pin "4" (uuid 18ad872c-733a-424b-9a69-2e1db8f39b5c))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "Y1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "Y1") (unit 1)
         )
@@ -6860,7 +6673,7 @@
   (symbol (lib_id "power:+5V") (at 162.56 69.85 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de6a47d4-a373-4965-97c1-b07ab5a3a00b)
-    (property "Reference" "#PWR015" (at 166.37 69.85 0)
+    (property "Reference" "#PWR01" (at 166.37 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 158.75 68.58 90)
@@ -6875,9 +6688,6 @@
     (pin "1" (uuid 43229853-4832-4fdc-9ced-8ecf9ac41ecd))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR015") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR01") (unit 1)
         )
@@ -6907,9 +6717,6 @@
     (pin "2" (uuid c84a58b8-cc78-459a-a646-543260ab7585))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R2") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R2") (unit 1)
         )
@@ -6964,9 +6771,6 @@
     (pin "2" (uuid a528e0af-b9d0-4604-8a9c-aa1014248540))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C6") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C6") (unit 1)
         )
@@ -6977,13 +6781,13 @@
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 267.97 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e86b1b98-3035-4be3-b480-cbfaf4890b30)
-    (property "Reference" "SW9" (at 267.97 140.97 0)
+    (property "Reference" "SW7" (at 267.97 140.97 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RotaryEncoder_Switch" (at 267.97 143.51 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "PCM_marbastlib-various:ROT_Alps_EC11E-Switch" (at 264.16 147.066 0)
+    (property "Footprint" "Trackpad:ROT_Alps_EC11E-Switch" (at 264.16 147.066 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 267.97 144.526 0)
@@ -6996,9 +6800,6 @@
     (pin "S2" (uuid ff3f0b3a-9738-4edf-95d0-3fd34227382b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW9") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW7") (unit 1)
         )
@@ -7053,9 +6854,6 @@
     (pin "2" (uuid ed0d771e-98ba-4f81-a234-505b9967c0df))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R7") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R7") (unit 1)
         )
@@ -7066,7 +6864,7 @@
   (symbol (lib_id "power:GND") (at 234.95 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eb8bb4b1-a9f0-40c9-a2ac-f7ded57ec01b)
-    (property "Reference" "#PWR017" (at 234.95 58.42 0)
+    (property "Reference" "#PWR040" (at 234.95 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 237.49 52.07 0)
@@ -7081,9 +6879,6 @@
     (pin "1" (uuid 92ec0044-4825-415a-af3e-c94882623ed9))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR017") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR040") (unit 1)
         )
@@ -7094,7 +6889,7 @@
   (symbol (lib_id "power:+1V1") (at 77.47 20.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid edb9a406-084a-4249-bfe3-46442902968a)
-    (property "Reference" "#PWR06" (at 77.47 24.13 0)
+    (property "Reference" "#PWR010" (at 77.47 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V1" (at 77.47 15.24 0)
@@ -7109,9 +6904,6 @@
     (pin "1" (uuid 9c0413f0-0c8e-44c6-aa31-6037605ed140))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR06") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR010") (unit 1)
         )
@@ -7122,7 +6914,7 @@
   (symbol (lib_id "power:+5V") (at 248.92 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ee3e672e-022f-4895-ab01-09d166560bff)
-    (property "Reference" "#PWR019" (at 248.92 48.26 0)
+    (property "Reference" "#PWR041" (at 248.92 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 248.92 39.37 0)
@@ -7137,9 +6929,6 @@
     (pin "1" (uuid fb8afb20-366d-4ca3-a099-6ee20cca14a7))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR019") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR041") (unit 1)
         )
@@ -7150,7 +6939,7 @@
   (symbol (lib_id "Device:C_Small") (at 22.86 62.23 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eeb492b6-2e6a-4bde-82d5-0b367970de85)
-    (property "Reference" "C5" (at 21.5963 59.69 0)
+    (property "Reference" "C37" (at 21.5963 59.69 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 24.1363 59.69 0)
@@ -7169,9 +6958,6 @@
     (pin "2" (uuid 49b28c95-064c-4b48-bc6f-660de430c95d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "C5") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "C37") (unit 1)
         )
@@ -7182,7 +6968,7 @@
   (symbol (lib_id "power:GND") (at 151.13 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f0d21b2e-0244-4ee9-a82d-9c9ea1a10cc6)
-    (property "Reference" "#PWR036" (at 151.13 158.75 0)
+    (property "Reference" "#PWR042" (at 151.13 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 153.67 156.21 0)
@@ -7197,9 +6983,6 @@
     (pin "1" (uuid 210d924d-9b40-40f4-852d-d39ee3354f7d))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR036") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR042") (unit 1)
         )
@@ -7210,7 +6993,7 @@
   (symbol (lib_id "power:GND") (at 20.32 62.23 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f24daabc-e75d-400f-845c-44efbce18f90)
-    (property "Reference" "#PWR04" (at 20.32 68.58 0)
+    (property "Reference" "#PWR017" (at 20.32 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 16.51 64.77 0)
@@ -7225,9 +7008,6 @@
     (pin "1" (uuid 0e939634-65e8-44af-9431-7f97ff4697eb))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR04") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR017") (unit 1)
         )
@@ -7238,7 +7018,7 @@
   (symbol (lib_id "power:+3.3V") (at 162.56 57.15 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fbc98dfb-6be8-49df-adb3-82321bdc9ea5)
-    (property "Reference" "#PWR0103" (at 166.37 57.15 0)
+    (property "Reference" "#PWR021" (at 166.37 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 157.48 55.88 90)
@@ -7253,9 +7033,6 @@
     (pin "1" (uuid 94b1f697-382d-4626-8d1a-cb8984f3f64b))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "#PWR0103") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "#PWR021") (unit 1)
         )
@@ -7285,9 +7062,6 @@
     (pin "2" (uuid 77e932cf-caa2-401c-af56-ede852f8d887))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "R1") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "R1") (unit 1)
         )
@@ -7298,7 +7072,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 171.45 152.4 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fec43f44-1606-4bfb-8b9e-25af781b3d9a)
-    (property "Reference" "SW8" (at 171.45 144.78 0)
+    (property "Reference" "SW2" (at 171.45 144.78 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 171.45 147.32 0)
@@ -7314,9 +7088,6 @@
     (pin "2" (uuid a6b1fffa-a7cd-43e7-aa46-ac6bac9f386f))
     (instances
       (project "trackpad"
-        (path "/3796446b-0052-4d89-b512-07a2e9135d0d"
-          (reference "SW8") (unit 1)
-        )
         (path "/3796446b-0052-4d89-b512-07a2e9135d0d/efc97fde-28db-4fd6-89b1-84dafa779b4e"
           (reference "SW2") (unit 1)
         )
