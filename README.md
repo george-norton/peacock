@@ -84,7 +84,7 @@ Assembly is simple as the majority of the work is done by the manufacturer. You 
 
 - Remove the edge rails  and cut the mousebites to separate the two PCBs.
 - Test your PCB. Plug it in and hopefully you will see a new mass storage device. Drag and drop a firmware (uf2) file to flash it. If sucessfull, the LEDs should light up.
-- Solder 5 MX/Choc swithces.
+- Solder 5 MX/Choc switches.
 - Solder 2 EC11/EC12 encoders.
 - Connect both boards together using the FFC cable.
 - Use a thread tapping tool to create threads in the case.
