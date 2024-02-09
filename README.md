@@ -29,14 +29,19 @@ controller as they tend to be designed for much larger sensor areas than touchpa
 - The sensor also supports a passive stylus, although the electrodes in Peacock are larger than the recommended size, so this may not perform well.
 
 ## Software support
-Currently, as well as pointer movement, the MaxTouch QMK driver will detect the following gestures:
+Currently there are two QMK branches with peacock support.
+
+The [first](https://github.com/george-norton/qmk_firmware/tree/peacock) implements support for the maxtouch IC as a pointing device - this is how the current
+trackpads (cirque, Azoteq) work. as well as pointer movement,
+the MaxTouch QMK driver will detect the following gestures:
 - Tap to click (1 finger for mouse button 1, 2 fingers for mouse button 2 etc..)
 - Two finger scroll.
 - Tap and hold to drag.
 
-## Software limitations
-QMK currently supports pointing devices, but it reports them as USB hid mice. This means we only report a single pointer movement, a pair of scroll wheels and
-a set of buttons to the host. For now, this prevents us from supporting some multitouch gestures such as pinch to zoom.
+The [second](https://github.com/george-norton/qmk_firmware/tree/multitouch_experiment) exteneds the digitizer feature to implement real trackpad support. On this
+branch, the MaxTouch driver reports 5 separate finger positions to the host and it detects gestures. This provides a better experience as scrolling is smoother,
+pinch and zoom are supported and most OS's provide additional 3 finger gestures which will work too. This branch still needs a lot of work, and it is a large changeset
+which will likely take some time to get merged into QMK.
 
 ## Sensor tuning
 The sensor sensitivity may require tuning depending on the type of surface you use on your build. This can be done by adjusting the touch threshold, and
@@ -73,7 +78,19 @@ The v1.01 release has the issue fixed. It is untested, but expected to work.
 
 ## Assembly guide
 
-TODO
+TODO - Add some pictures and more details.
+
+Assembly is simple as the majority of the work is done by the manufacturer. You will need to:
+
+- Remove the edge rails  and cut the mousebites to separate the two PCBs.
+- Test your PCB. Plug it in and hopefully you will see a new mass storage device. Drag and drop a firmware (uf2) file to flash it. If sucessfull, the LEDs should light up.
+- Solder 5 MX/Choc swithces.
+- Solder 2 EC11/EC12 encoders.
+- Connect both boards together using the FFC cable.
+- Use a thread tapping tool to create threads in the case.
+- Place the boards into the case.
+- Screw it in with 8xM3 6mm and 1xM2 6mm screws.
+- Stick your surface to the sensor area (self adhesive vinyl works well).
 
 If you build a Peacock, please post a picture in the [show and tell](https://github.com/george-norton/peacock/discussions/categories/show-and-tell).
 
