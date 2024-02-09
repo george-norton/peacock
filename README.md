@@ -54,15 +54,18 @@ To build a Peacock you will need:
 - 2 Encoders (ec11/ec12).
 - 2 Encoder knobs.
 - 1 Type-A 12P 0.5 mm pitch FFC cable (ideally around 5cm long) [aliexpress](https://www.aliexpress.com/item/1005004140412156.html).
-- A 3D printed case and its mounting fixtures.
+- [A 3D printed case](case/) and its mounting fixtures.
 - Some sort of nice insulating surface to put over the sensor, for example sticky vinyl wrap or acrylic. Ideally this should not have any air gaps, so FDM printed surfaces should be printed with 100% infill.
 
 ## PCB ordering guide
 Use the gerbers files in the releases, most options are not critical although a thicker PCB is probably best so it does not flex too much when you press against the sensor.
-a
 I have tested with 1.6mm thickness, lead free HASL from JLCPCB.
 
 The sensor IC is not available from LCSC, you will need to use JLCPCB's global parts sourcing service to order chips from Digikey, the digikey part number is 150-ATMXT336UD-MAU002-ND, expect a lead time of 1-2 weeks. You may also find the flash memory and LED parts go in and out of stock, so it might also be worth preordering those. The LEDs are optional, if the are not available you can always hand solder some at a later time.
+
+You can see the correct part orientation here, when ordering ensure that all parts are correctly rotated:
+
+![Part orientation](images/part-orientation.jpg)
 
 The v1.0 release has been tested and it works, but there is an issue with the I2C pin allocation. As a result it requires two additional bodge wires, and the encoder switches will not work.
 
