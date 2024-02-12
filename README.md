@@ -29,14 +29,19 @@ controller as they tend to be designed for much larger sensor areas than touchpa
 - The sensor also supports a passive stylus, although the electrodes in Peacock are larger than the recommended size, so this may not perform well.
 
 ## Software support
-Currently, as well as pointer movement, the MaxTouch QMK driver will detect the following gestures:
+Currently there are two QMK branches with peacock support.
+
+The [first](https://github.com/george-norton/qmk_firmware/tree/peacock) implements support for the maxtouch IC as a pointing device - this is how the current
+trackpads (cirque, Azoteq) work. as well as pointer movement,
+the MaxTouch QMK driver will detect the following gestures:
 - Tap to click (1 finger for mouse button 1, 2 fingers for mouse button 2 etc..)
 - Two finger scroll.
 - Tap and hold to drag.
 
-## Software limitations
-QMK currently supports pointing devices, but it reports them as USB hid mice. This means we only report a single pointer movement, a pair of scroll wheels and
-a set of buttons to the host. For now, this prevents us from supporting some multitouch gestures such as pinch to zoom.
+The [second](https://github.com/george-norton/qmk_firmware/tree/multitouch_experiment) exteneds the digitizer feature to implement real trackpad support. On this
+branch, the MaxTouch driver reports 5 separate finger positions to the host and it detects gestures. This provides a better experience as scrolling is smoother,
+pinch and zoom are supported and most OS's provide additional 3 finger gestures which will work too. This branch still needs a lot of work, and it is a large changeset
+which will likely take some time to get merged into QMK.
 
 ## Sensor tuning
 The sensor sensitivity may require tuning depending on the type of surface you use on your build. This can be done by adjusting the touch threshold, and
@@ -54,15 +59,18 @@ To build a Peacock you will need:
 - 2 Encoders (ec11/ec12).
 - 2 Encoder knobs.
 - 1 Type-A 12P 0.5 mm pitch FFC cable (ideally around 5cm long) [aliexpress](https://www.aliexpress.com/item/1005004140412156.html).
-- A 3D printed case and its mounting fixtures.
+- [A 3D printed case](case/) and its mounting fixtures.
 - Some sort of nice insulating surface to put over the sensor, for example sticky vinyl wrap or acrylic. Ideally this should not have any air gaps, so FDM printed surfaces should be printed with 100% infill.
 
 ## PCB ordering guide
 Use the gerbers files in the releases, most options are not critical although a thicker PCB is probably best so it does not flex too much when you press against the sensor.
-a
 I have tested with 1.6mm thickness, lead free HASL from JLCPCB.
 
 The sensor IC is not available from LCSC, you will need to use JLCPCB's global parts sourcing service to order chips from Digikey, the digikey part number is 150-ATMXT336UD-MAU002-ND, expect a lead time of 1-2 weeks. You may also find the flash memory and LED parts go in and out of stock, so it might also be worth preordering those. The LEDs are optional, if the are not available you can always hand solder some at a later time.
+
+You can see the correct part orientation here, when ordering ensure that all parts are correctly rotated:
+
+![Part orientation](images/part-orientation.jpg)
 
 The v1.0 release has been tested and it works, but there is an issue with the I2C pin allocation. As a result it requires two additional bodge wires, and the encoder switches will not work.
 
@@ -70,7 +78,19 @@ The v1.01 release has the issue fixed. It is untested, but expected to work.
 
 ## Assembly guide
 
-TODO
+TODO - Add some pictures and more details.
+
+Assembly is simple as the majority of the work is done by the manufacturer. You will need to:
+
+- Remove the edge rails  and cut the mousebites to separate the two PCBs.
+- Test your PCB. Plug it in and hopefully you will see a new mass storage device. Drag and drop a firmware (uf2) file to flash it. If sucessfull, the LEDs should light up.
+- Solder 5 MX/Choc switches.
+- Solder 2 EC11/EC12 encoders.
+- Connect both boards together using the FFC cable.
+- Use a thread tapping tool to create threads in the case.
+- Place the boards into the case.
+- Screw it in with 8xM3 6mm and 1xM2 6mm screws.
+- Stick your surface to the sensor area (self adhesive vinyl works well).
 
 If you build a Peacock, please post a picture in the [show and tell](https://github.com/george-norton/peacock/discussions/categories/show-and-tell).
 
