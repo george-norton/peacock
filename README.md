@@ -78,19 +78,21 @@ The v1.01 release has the issue fixed. It is untested, but expected to work.
 
 ## Assembly guide
 
-TODO - Add some pictures and more details.
-
 Assembly is simple as the majority of the work is done by the manufacturer. You will need to:
 
-- Remove the edge rails  and cut the mousebites to separate the two PCBs.
+- Remove the edge rails by breaking them off with a pair of pliers, then cut or break the mousebites to separate the two PCBs.
+![Remove the edge rails](images/remove-rails.jpg)
 - Test your PCB. Plug it in and hopefully you will see a new mass storage device. Drag and drop a firmware (uf2) file to flash it. If sucessfull, the LEDs should light up.
 - Solder 5 MX/Choc switches.
 - Solder 2 EC11/EC12 encoders.
-- Connect both boards together using the FFC cable.
+![Solder the switches](images/switches.jpg)
+- Connect both boards together using the FFC cable, the black parts of the connector can be opened to enable you to insert the cable.
+![Connect the VIK cable](images/vik.jpg)
 - Use a thread tapping tool to create threads in the case.
 - Place the boards into the case.
-- Screw it in with 8xM3 6mm and 1xM2 6mm screws.
-- Stick your surface to the sensor area (self adhesive vinyl works well).
+- Screw it in with 8xM3 6mm screws and optionally 1xM2 6mm screw near the USB port.
+- Stick your surface to the sensor area (self adhesive vinyl works well). A single piece of standard vinyl may be insufficient for the trackpad to track well, a second layer will help.
+![The completed build](images/complete.jpg)
 
 If you build a Peacock, please post a picture in the [show and tell](https://github.com/george-norton/peacock/discussions/categories/show-and-tell).
 
