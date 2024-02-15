@@ -61,6 +61,7 @@ To build a Peacock you will need:
 - 1 Type-A 12P 0.5 mm pitch FFC cable (ideally around 5cm long) [aliexpress](https://www.aliexpress.com/item/1005004140412156.html).
 - [A 3D printed case](case/) and its mounting fixtures.
 - Some sort of nice insulating surface to put over the sensor, for example sticky vinyl wrap or acrylic. Ideally this should not have any air gaps, so FDM printed surfaces should be printed with 100% infill.
+- 4 rubber bumpons.
 
 ## PCB ordering guide
 Use the gerbers files in the releases, most options are not critical although a thicker PCB is probably best so it does not flex too much when you press against the sensor.
@@ -81,23 +82,30 @@ The v1.01 release has the issue fixed. It is untested, but expected to work.
 Assembly is simple as the majority of the work is done by the manufacturer. You will need to:
 
 - Remove the edge rails by breaking them off with a pair of pliers, then cut or break the mousebites to separate the two PCBs.
+
 ![Remove the edge rails](images/remove-rails.jpg)
+
 - Test your PCB. Plug it in and hopefully you will see a new mass storage device. Drag and drop a firmware (uf2) file to flash it. If sucessfull, the LEDs should light up.
 - Solder 5 MX/Choc switches.
 - Solder 2 EC11/EC12 encoders.
+
 ![Solder the switches](images/switches.jpg)
+
 - Connect both boards together using the FFC cable, the black parts of the connector can be opened to enable you to insert the cable.
+
 ![Connect the VIK cable](images/vik.jpg)
+
 - Use a thread tapping tool to create threads in the case.
 - Place the boards into the case.
 - Screw it in with 8xM3 6mm screws and optionally 1xM2 6mm screw near the USB port.
 - Stick your surface to the sensor area (self adhesive vinyl works well). A single piece of standard vinyl may be insufficient for the trackpad to track well, a second layer will help.
+
 ![The completed build](images/complete.jpg)
 
 If you build a Peacock, please post a picture in the [show and tell](https://github.com/george-norton/peacock/discussions/categories/show-and-tell).
 
 ## Firmware
-Peacock support has not yet been merged back to QMK. You can find a branch [here](https://github.com/george-norton/qmk_firmware/tree/peacock).
+Peacock support has not yet been merged back to QMK. You can find a branch with pointing device support [here](https://github.com/george-norton/qmk_firmware/tree/peacock) or the multitouch branch [here](https://github.com/george-norton/qmk_firmware/tree/multitouch_experiment) Note, this branch currently does not work with MacOS.
 
 ## VIK support
 This trackpad is a VIK device, so you should be able to discard the controller portion of the build and wire the trackpad directly to a different VIK enabled controller (such as those sold by fingerpunch and splitkb). You could also replace the controller board with one of your own design.
