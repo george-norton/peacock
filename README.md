@@ -60,7 +60,7 @@ To build a Peacock you will need:
 - 2 Encoder knobs.
 - 1 Type-A 12P 0.5 mm pitch FFC cable (ideally around 5cm long) [aliexpress](https://www.aliexpress.com/item/1005004140412156.html).
 - [A 3D printed case](case/) and its mounting fixtures.
-- Some sort of nice insulating surface to put over the sensor, for example sticky vinyl wrap or acrylic. Ideally this should not have any air gaps, so FDM printed surfaces should be printed with 100% infill.
+- Some sort of nice feeling insulating surface to put over the sensor, for example sticky vinyl wrap or acrylic. Ideally this should not have any air gaps, so FDM printed surfaces should be printed with 100% infill. If the surface is too thin the trackpad will not perform well, multiple layers of vinyl may be required.
 - 4 rubber bumpons.
 
 ## PCB ordering guide
@@ -98,7 +98,7 @@ Assembly is simple as the majority of the work is done by the manufacturer. You 
 - Use a thread tapping tool to create threads in the case.
 - Place the boards into the case.
 - Screw it in with 8xM3 6mm screws and optionally 1xM2 6mm screw near the USB port.
-- Stick your surface to the sensor area (self adhesive vinyl works well). A single piece of standard vinyl may be insufficient for the trackpad to track well, a second layer will help.
+- Stick your surface to the sensor area. The surface is critical to the performance of the trackpad, without a surface you will likley get no movement at all. Depending on its thickness, a single piece of vinyl will likely be insufficient for the trackpad to track well, a two or three layers will work much better. I noticed that some battery powered USB hosts require additional surface thickness to track multiple fingers well.
 
 ![The completed build](images/complete.jpg)
 
