@@ -2430,7 +2430,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 172.72 86.36 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 0da2d8e2-4456-4b5c-8ecf-021e52e413aa)
     (property "Reference" "H3" (at 167.64 87.63 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2455,7 +2455,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x07_Pin") (at 231.14 111.76 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 0e6b77da-faa0-4900-9b87-85e191437766)
     (property "Reference" "J5" (at 231.14 121.92 0)
       (effects (font (size 1.27 1.27)))
@@ -2486,7 +2486,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x01_Pin") (at 233.68 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15c7d93e-fad2-4b3d-880c-91bebe0f50f9)
     (property "Reference" "J10" (at 234.315 130.81 0)
       (effects (font (size 1.27 1.27)))
@@ -2586,7 +2586,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 172.72 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 23cbbe8d-17cb-462c-9579-7d0dc673a360)
     (property "Reference" "H1" (at 167.64 74.93 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2795,7 +2795,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 172.72 80.01 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 3f3d65d6-cc1e-4cd1-aef9-b4ecd66d5425)
     (property "Reference" "H2" (at 167.64 81.28 90)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3146,7 +3146,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x08_Pin") (at 189.23 123.19 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 75755d8d-8339-4484-8a17-4899d81202d6)
     (property "Reference" "J8" (at 187.96 113.03 0)
       (effects (font (size 1.27 1.27)))
@@ -3290,7 +3290,7 @@
   )
 
   (symbol (lib_id "Jumper:SolderJumper_3_Open") (at 160.02 29.21 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 8f0fca6d-23b8-4987-affb-3f625504e485)
     (property "Reference" "JP1" (at 160.02 26.67 0)
       (effects (font (size 1.27 1.27)))
@@ -3396,7 +3396,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 172.72 92.71 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid a13134e5-044a-4d24-9502-09416a1166b7)
     (property "Reference" "H4" (at 167.64 93.98 90)
       (effects (font (size 1.27 1.27)) (justify left))

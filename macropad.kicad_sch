@@ -3732,7 +3732,7 @@
   )
 
   (symbol (lib_id "Connector_Generic:Conn_01x03") (at 48.26 120.65 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 08d21713-b26f-4379-8845-87a8042cfd6e)
     (property "Reference" "J3" (at 45.72 119.38 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3868,12 +3868,12 @@
   )
 
   (symbol (lib_id "Device:C_Small") (at 196.85 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 0fd69bda-c94f-4719-bd70-e0979830bc61)
     (property "Reference" "C33" (at 199.39 101.6063 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100n" (at 199.39 104.1463 0)
+    (property "Value" "100n" (at 198.12 114.3 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 196.85 102.87 0)
@@ -4434,7 +4434,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 163.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 3ebca85d-1d83-4e07-90d1-44970c3d4f79)
     (property "Reference" "H5" (at 107.95 165.1 90)
       (effects (font (size 1.27 1.27)))
@@ -4563,7 +4563,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x04_Pin") (at 156.21 171.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 47da6c89-46fb-4f0e-8db5-665bf09528a9)
     (property "Reference" "J7" (at 154.94 168.91 0)
       (effects (font (size 1.27 1.27)))
@@ -4591,7 +4591,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 176.53 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 48d951d7-15db-4799-935a-7f1dc2f49c1a)
     (property "Reference" "H7" (at 107.95 177.8 90)
       (effects (font (size 1.27 1.27)))
@@ -5032,7 +5032,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 71.12 156.21 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 688020ba-72b5-49a9-9357-a64298b6ea20)
     (property "Reference" "J9" (at 77.47 153.67 0)
       (effects (font (size 1.27 1.27)))
@@ -5130,7 +5130,7 @@
     (property "Datasheet" "" (at 168.91 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C2919479" (at 153.67 85.09 0)
+    (property "LCSC" "C2906115" (at 153.67 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 70826303-aa6f-4e6b-8472-f2342be2fdcd))
@@ -5238,7 +5238,7 @@
   )
 
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 143.51 149.86 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74b9aa07-0f53-466f-85cb-40b581123b22)
     (property "Reference" "SW1" (at 143.51 139.7 0)
       (effects (font (size 1.27 1.27)))
@@ -5371,7 +5371,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 182.88 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 83b02ade-7043-43ce-91d1-78b2a44d28ec)
     (property "Reference" "H8" (at 107.95 184.15 90)
       (effects (font (size 1.27 1.27)))
@@ -5550,7 +5550,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x05_Pin") (at 132.08 176.53 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 937dda03-eaad-4271-843d-970b5c6a448e)
     (property "Reference" "J6" (at 130.81 171.45 0)
       (effects (font (size 1.27 1.27)))
@@ -5874,7 +5874,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 189.23 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid abe96e0e-58fe-4895-8830-aeb4d6097fbc)
     (property "Reference" "H9" (at 107.95 191.77 90)
       (effects (font (size 1.27 1.27)))
@@ -5899,7 +5899,7 @@
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 113.03 170.18 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid ace579cf-8fa5-4478-be81-2d73449aa332)
     (property "Reference" "H6" (at 107.95 171.45 90)
       (effects (font (size 1.27 1.27)))
@@ -6128,7 +6128,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 218.44 152.4 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid bb25853e-429e-4d8c-b8c0-3674f3bb0d26)
     (property "Reference" "SW5" (at 218.44 144.78 0)
       (effects (font (size 1.27 1.27)))
@@ -6229,7 +6229,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 186.69 152.4 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid c53613f3-d585-4efa-b382-135059610807)
     (property "Reference" "SW3" (at 186.69 144.78 0)
       (effects (font (size 1.27 1.27)))
@@ -6269,7 +6269,7 @@
     (property "Datasheet" "~" (at 38.1 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C221821" (at 38.1 44.45 0)
+    (property "LCSC" "C256105" (at 38.1 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3f2a83e6-0e65-43fc-8a8f-14e578944207))
@@ -6448,7 +6448,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 203.2 152.4 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid d26a3754-131f-44f2-9475-2ddb6d424147)
     (property "Reference" "SW4" (at 203.2 144.78 0)
       (effects (font (size 1.27 1.27)))
@@ -6503,7 +6503,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x04_Pin") (at 156.21 186.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid d574f79d-c1d8-46c1-86e3-8d3632af4ab8)
     (property "Reference" "J11" (at 153.67 184.15 0)
       (effects (font (size 1.27 1.27)))
@@ -6585,7 +6585,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 234.95 152.4 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid d994acaf-b355-48e0-82e2-b2de710b896d)
     (property "Reference" "SW6" (at 234.95 144.78 0)
       (effects (font (size 1.27 1.27)))
@@ -6779,7 +6779,7 @@
   )
 
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 267.97 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e86b1b98-3035-4be3-b480-cbfaf4890b30)
     (property "Reference" "SW7" (at 267.97 140.97 0)
       (effects (font (size 1.27 1.27)))
@@ -7070,7 +7070,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 171.45 152.4 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid fec43f44-1606-4bfb-8b9e-25af781b3d9a)
     (property "Reference" "SW2" (at 171.45 144.78 0)
       (effects (font (size 1.27 1.27)))
