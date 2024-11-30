@@ -1,7 +1,7 @@
 # Peacock
 
 Peacock is an RP2040 powered trackpad running QMK. It features an integrated Microchip MaxTouch sensor IC which is
-connected to a 7" capacitive sensor.
+connected to a 7" capacitive sensor. I also designed some little trackpads, see [Procyon](https://github.com/george-norton/procyon).
 
 ![Peacock PCB](images/peacock.jpg)
 
@@ -105,7 +105,14 @@ Assembly is simple as the majority of the work is done by the manufacturer. You 
 If you build a Peacock, please post a picture in the [show and tell](https://github.com/george-norton/peacock/discussions/categories/show-and-tell).
 
 ## Firmware
+
 Peacock support has not yet been merged back to QMK. You can find a branch with pointing device support [here](https://github.com/george-norton/qmk_firmware/tree/peacock) or the multitouch branch [here](https://github.com/george-norton/qmk_firmware/tree/multitouch_experiment) Note, this branch currently does not work with MacOS.
 
 ## VIK support
+
 This trackpad is a VIK device, so you should be able to discard the controller portion of the build and wire the trackpad directly to a different VIK enabled controller (such as those sold by fingerpunch and splitkb). You could also replace the controller board with one of your own design.
+
+## Schematic
+
+![Macropad](images/schematic-Macropad.png)
+![Sensor](images/schematic-Sensor.png)
