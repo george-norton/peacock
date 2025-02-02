@@ -11,6 +11,6 @@ Optionally, you can use longer m3 bolts to tilt the back of the case up for comf
 
 Additionally files with a 5 degree tilt applied to the base of the case have also been provided for better ergonomics. 
 
-![Peacock 5 Deg Case](https://imgur.com/a/xi6hyPW)
+![Peacock 5 Deg Case](https://i.imgur.com/ei5TQxb.jpeg)
 
 ![Peacock low case fusion 360 view](https://imgur.com/ODhpnVRh.jpg)
