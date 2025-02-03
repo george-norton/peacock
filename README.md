@@ -1,9 +1,10 @@
 # Peacock
 
-Peacock is an RP2040 powered trackpad running QMK. It features an integrated Microchip MaxTouch sensor IC which is
-connected to a 7" capacitive sensor. I also designed some little trackpads, see [Procyon](https://github.com/george-norton/procyon).
+Peacock is an RP2040 powered trackpad running QMK. It features an integrated Microchip MaxTouch sensor IC which is connected to a 7" capacitive sensor. I also designed some little trackpads which you can integrate into your own keyboards, see [Procyon](https://github.com/george-norton/procyon).
 
 ![Peacock PCB](images/peacock.jpg)
+
+The [Ploopy trackpad](https://ploopy.co/trackpad/) is like a more polished Peacock, with a higher resolution sensor. It runs code build from the same QMK/ZMK branches, and is easier to buy.
 
 ## Features
 - Fully PCBA, this other than switches and encoders, this board is designed to be fully factory assembled.
@@ -29,27 +30,19 @@ controller as they tend to be designed for much larger sensor areas than touchpa
 - The sensor also supports a passive stylus, although the electrodes in Peacock are larger than the recommended size, so this may not perform well.
 
 ## Software support
-Currently there are two QMK branches with peacock support.
+Currently there are experimental QMK and ZMK branches with Peacock support.
 
-The [first](https://github.com/george-norton/qmk_firmware/tree/peacock) implements support for the maxtouch IC as a pointing device - this is how the current
-trackpads (cirque, Azoteq) work. as well as pointer movement,
-the MaxTouch QMK driver will detect the following gestures:
-- Tap to click (1 finger for mouse button 1, 2 fingers for mouse button 2 etc..)
-- Two finger scroll.
-- Tap and hold to drag.
+The [QMK multitouch_experiment branch](https://github.com/george-norton/qmk_firmware/tree/multitouch_experiment) exteneds the QMK digitizer feature to implement real trackpad support. On this branch, the MaxTouch driver reports 5 separate finger positions to the host and it detects gestures. You should get all the same gesture support you would expect from a modern trackpad. This branch is a large changeset which will likely take some time to get merged into QMK. There are some [pre-built QMK firmware images in my userspace](https://github.com/george-norton/qmk_userspace/releases/tag/latest).
 
-The [second](https://github.com/george-norton/qmk_firmware/tree/multitouch_experiment) exteneds the digitizer feature to implement real trackpad support. On this
-branch, the MaxTouch driver reports 5 separate finger positions to the host and it detects gestures. This provides a better experience as scrolling is smoother,
-pinch and zoom are supported and most OS's provide additional 3 finger gestures which will work too. This branch still needs a lot of work, and it is a large changeset
-which will likely take some time to get merged into QMK.
+The [ZMK Maxtouch module](https://github.com/george-norton/maxtouch-zephyr-module) builds against Petes [feat/pointers-move-scroll-ptp](https://github.com/petejohanson/zmk/tree/feat/pointers-move-scroll-ptp) ZMK branch. It is currently missing LED support, and fallback to mouse emulation (so no MacOS support).
 
 ## Sensor tuning
 The sensor sensitivity may require tuning depending on the type of surface you use on your build. This can be done by adjusting the touch threshold, and
-if required the transmit gain. If your sensor is not detecting touches well, reduce the touch threshold. If your sensor is jittery, or is detecting spurious touches
-increase the touch threshold, or if there is any ungrounded metal by the sensor, move it. Increasing the transmit gain will require a larger touch threshold, but it
-should enable you to use thicker overlays and it will give you more room to adjust the touch threshold.
+if required the transmit gain. If your sensor is not detecting touches well, reduce the touch threshold. If your sensor is jittery, or is detecting spurious touches increase the touch threshold, or if there is any ungrounded metal by the sensor, move it. Increasing the transmit gain will require a larger touch threshold, but it should enable you to use thicker overlays and it will give you more room to adjust the touch threshold.
 
-The gestures are implemented in software, they rely on various parameters that can be tuned by defining macros.
+The mouse emulation gestures are implemented in software, they rely on various parameters that can be tuned by defining macros.
+
+If you flash the QMK debug firmware, you can use the [Maxtouch debug](https://github.com/george-norton/maxtouch-debug) tool to adjust the sensor tuning in real time and see how it works.
 
 ## BOM
 To build a Peacock you will need:
@@ -75,7 +68,7 @@ You can see the correct part orientation here, when ordering ensure that all par
 
 The v1.0 release has been tested and it works, but there is an issue with the I2C pin allocation. As a result it requires two additional bodge wires, and the encoder switches will not work.
 
-The v1.01 release has the issue fixed. It is untested, but expected to work.
+The v1.01 release has the issue fixed, you should order this version.
 
 ## Assembly guide
 
@@ -111,6 +104,38 @@ Peacock support has not yet been merged back to QMK. You can find a branch with 
 ## VIK support
 
 This trackpad is a VIK device, so you should be able to discard the controller portion of the build and wire the trackpad directly to a different VIK enabled controller (such as those sold by fingerpunch and splitkb). You could also replace the controller board with one of your own design.
+
+## VIK certification
+
+Trackpad module
+
+| Category                | Classification          | Response           |
+| ----------------------- | ----------------------- | ------------------ |
+| FPC connector           | Required                | :heavy_check_mark: |
+| Breakout pins           | Recommended             | :heavy_check_mark: |
+| Uses: SPI               | Optional                | :x:                |
+| SPI used for SPI only   | Strongly recommended    | N/A                |
+| Uses: I2C               | Optional                | :heavy_check_mark: |
+| I2C used for I2C only   | Strongly Recommended    | :heavy_check_mark: |
+| I2C pull ups            | Required                | 3.3k               |
+| Uses: RGB               | Optional                | :x:                |
+| Uses: Extra GPIO 1      | Optional                | :heavy_check_mark: |
+| Uses: Extra GPIO 2      | Optional                | :x:                |
+| Standard PCB Size/Mount | Strongly recommended    | :x:                |
+
+Peacock controller
+
+| Category                 | Classification          | Response           |
+| -----------------------  | ----------------------- | ------------------ |
+| FPC connector            | Required                | :heavy_check_mark: |
+| Breakout pins            | Recommended             | :heavy_check_mark: |
+| Supplies: SPI            | Required                | :heavy_check_mark: |
+| Supplies: I2C            | Required                | :heavy_check_mark: |
+| I2C on main PCB          | Discouraged             | :x:                |
+| I2C pull ups             | Informative             | N/A                |
+| Supplies: RGB            | Required                | :heavy_check_mark: |
+| Supplies: Extra GPIO 1   | Required                | Analog/Digital     |
+| Supplies: Extra GPIO 2   | Required                | Analog/Digital     |
 
 ## Schematic
 
